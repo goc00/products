@@ -1,0 +1,195 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Core - Users",
+		"_postman_id": "36b35da1-9ba2-c93e-3b9e-393587592c0e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"url": "https://api.digevo.com/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oGfGg24Jxa5NW8fIekWsC2erPQjHKKJ91XGED0uo",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idProduct\":1,\r\n\t\"idChannel\":1,\r\n\t\"value\":\"569623766815\",\r\n\t\"password\":\"aabbcc\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "https://api.digevo.com/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oGfGg24Jxa5NW8fIekWsC2erPQjHKKJ91XGED0uo",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idProduct\":1,\r\n\t\"idChannel\":1,\r\n\t\"value\":\"569623766812\",\r\n\t\"password\": \"abc123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePassword",
+			"request": {
+				"url": "https://api.digevo.com/users/updatepassword",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oGfGg24Jxa5NW8fIekWsC2erPQjHKKJ91XGED0uo",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idClient\":79515287,\r\n\t\"idProduct\":1,\r\n\t\"idChannel\":1,\r\n\t\"oldPassword\":\"aabbcc\",\r\n\t\"newPassword\":\"abc123\",\r\n\t\"newPasswordRe\":\"abc123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "FillUserData",
+			"request": {
+				"url": "https://api.digevo.com/users/filluserdata",
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oGfGg24Jxa5NW8fIekWsC2erPQjHKKJ91XGED0uo",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idClient\": 79487246,\n    \"tags\": [\n        \"APE_PATERNO\",\n        \"APE_MATERNO\"\n    ],\n    \"values\": [\n        \"Barraza\",\n        \"Non Schweinsteiger\"\n    ]\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetChannelList",
+			"request": {
+				"url": "https://api.digevo.com/users/getchannellist",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oGfGg24Jxa5NW8fIekWsC2erPQjHKKJ91XGED0uo",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CloseCustody",
+			"request": {
+				"url": "https://api.digevo.com/users/closecustody",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "BQI1N9H7xx6cgDUUuOjwN9g78UWxSJAJ9QzCS24X",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"idCustody\": 34\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ResetPassword",
+			"request": {
+				"url": "https://api.digevo.com/users/resetpassword",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-api-key",
+						"value": "BQI1N9H7xx6cgDUUuOjwN9g78UWxSJAJ9QzCS24X",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"idProduct\":1,\r\n\t\"idChannel\":1,\r\n\t\"value\":\"569623766817\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetParamList",
+			"request": {
+				"url": "https://api.digevo.com/users/getparamlist",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oGfGg24Jxa5NW8fIekWsC2erPQjHKKJ91XGED0uo",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
